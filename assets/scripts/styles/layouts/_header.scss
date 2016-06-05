@@ -1,0 +1,34 @@
+//#? BANNER
+.banner {
+  background: $brand-primary-dark;
+  @extend .base-transition;
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  //#? Logo
+  .logo {
+    width: 100%;
+
+    img {
+      @extend .responsive;
+    }
+  }
+
+  //#? Img tagline
+  .img-tagline img {
+    @extend .responsive;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+  .banner {
+    .hero {
+      padding: none !important;
+    }
+  }
+
+}

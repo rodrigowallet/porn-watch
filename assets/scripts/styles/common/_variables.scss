@@ -1,0 +1,28 @@
+//#?#? Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+//#? Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+//#? Common
+$border-radius-base: 0.2rem;
+$paddin-base:        3rem 0;
+
+//#? Theme Colors
+@import "brand-white";
+//@import "brand-black";
+
+
+//#? Navbar Primary
+$navbar-height:                     80px;
+$navbar-default-bg:                 $brand-primary;
+$navbar-default-link-color:         $brand-text-icons;
+$navbar-default-link-hover-color:   $brand-text-icons-a;
+$navbar-default-link-active-color:  $brand-text-icons-a;
+
+//#? Pagination
+$pagination-bg: $brand-primary;
+$pager-hover-bg: $brand-primary-dark;
+$pager-border: $brand-text-icons-a;
+$pager-border-radius: 0.4rem;

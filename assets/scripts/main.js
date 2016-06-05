@@ -74,4 +74,31 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  function toggleNav() {
+    if($('.main-content').hasClass('off-canvas')) {
+      $('.main-content').removeClass('off-canvas');
+      $('.navbar-categories').removeClass('show-nav');
+    }else {
+      $('.main-content').addClass('off-canvas');
+      $('.navbar-categories').addClass('show-nav');
+    }
+  }
+
+  $('a[href="#categories"], .categories-toggle').click(function (e) {
+    e.stopPropagation();
+    toggleNav();
+  });
+
+  $('.close-nav').click(function (e) {
+    e.stopPropagation();
+    toggleNav();
+  });
+
+  $('.main-content').click(function(e){
+		var target = $(e.target);
+		if(!target.closest('.navbar-categories').length && $('.main-content').hasClass('off-canvas')){
+      toggleNav();
+    }
+	});
+
 })(jQuery); // Fully reference jQuery after this point.

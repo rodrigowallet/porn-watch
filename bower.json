@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "3.3.6"
+    "bootstrap-sass": "3.3.6",
+    "font-awesome": "fontawesome#^4.6.3",
+    "animatewithsass": "^3.2.2"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -30,6 +32,17 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./fonts/*",
+        "./scss/font-awesome.scss"
+      ]
+    },
+    "animatewithsass": {
+      "main": [
+        "./animate.scss"
       ]
     }
   }

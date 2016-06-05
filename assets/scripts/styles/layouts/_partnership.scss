@@ -1,0 +1,21 @@
+#partnership {
+  background: $brand-primary-dark;
+  padding-bottom: 10rem;
+
+  h1 {
+    color: $brand-text-icons;
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  .partner {
+    margin-bottom: 2rem;
+    a {
+      img {
+        width: 100%;
+        min-height: 60px;
+        @extend .img-responsive;
+      }
+    }
+  }
+}

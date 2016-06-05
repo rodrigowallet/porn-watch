@@ -1,0 +1,23 @@
+.pwads {
+  width: 100%;
+
+  .pwad {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: $brand-pwads;
+    border-radius: $border-radius-base;
+  }
+}
+
+.pwads-home{
+  margin: 8rem 0;
+}
+.pwads-footer {
+  margin: 8rem 0;
+}
+
+.pwads-mobile {
+  margin-top: 6rem;
+}

@@ -1,0 +1,44 @@
+//Google fonts
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800,800italic);
+
+//Default font family
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  @extend .base-transition;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Oswald", fantasy;
+}
+
+.wrapper {
+  overflow: hidden;
+  background: $brand-body;
+}
+.main-content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  @extend .base-transition;
+}
+
+//#? FLOATS
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+.main {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

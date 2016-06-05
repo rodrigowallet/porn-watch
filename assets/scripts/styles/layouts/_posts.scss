@@ -1,0 +1,162 @@
+//## MAIN POST
+.card {
+  height: 100%;
+  margin-bottom: 1rem;
+
+  .thumbnail {
+    img {
+      width: 100%;
+      @extend .img-responsive;
+    }
+  }
+
+  //#? Entry Title
+  .entry-title {
+    line-height: 0.7;
+    min-height: 50px;
+
+    a {
+      color: $brand-title;
+      font-size: 2rem;
+      font-weight: 300;
+      @extend .base-transition;
+
+      &:active,
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //#? Entry Meta
+  .entry-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    color: $brand-meta;
+    font-weight: 600;
+  }
+
+  //#? Entry Summary
+  .entry-summary {
+    min-height: 60px;
+
+    p {
+      color: $brand-paragraph;
+      font-size: 1.4rem;
+      font-weight: 100;
+    }
+  }
+
+  //#? Footer
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    float: left;
+    padding: 2rem 0;
+  }
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+//#SINGLE POST
+.single-post {
+
+  //Fix sigle content padding
+  .main {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .entry-title {
+    margin: 2rem 0;
+    color: $brand-text-icons;
+  }
+  .entry-meta {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    @extend .clearfix;
+
+    span {
+      float: right;
+      color: $brand-meta;
+    }
+
+    .time {
+      margin-right: 2rem;
+    }
+
+    .author {
+      float: left;
+    }
+  }
+
+  .entry-content {
+    color: $brand-paragraph;
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
+  .entry-tags,
+  .entry-categories {
+    margin: 2rem 0;
+    h3 {
+      padding: 2rem 0;
+      margin: 0;
+      color: $brand-primary;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .entry-categories {
+    a {
+      margin: 0 0.5rem 0.8rem 0;
+      @extend .btn;
+      @extend .btn-primary;
+    }
+  }
+
+	.entry-tags {
+
+		a {
+      padding: 0.2rem 1rem;
+      background: #eee;
+      border-radius: $border-radius-base;
+      margin: 0 0.8rem 0.8rem 0;
+      font-weight: bold;
+      display: inline-block;
+      float: left;
+
+			&:hover {
+        text-decoration: none;
+			}
+		}
+	}
+
+  .page-header {
+    margin-top: 0;
+  }
+}
+
+//#? No posts
+.no-posts {
+  flex-direction: column;
+  width: 100%;
+  padding: $paddin-base;
+  color: $brand-text-icons;
+  text-align: center;
+
+  .fa {
+    color: $brand-primary;
+    font-size: 10rem;
+  }
+}

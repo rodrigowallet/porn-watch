@@ -1,0 +1,23 @@
+.pager {
+  margin: 8rem 0 0;
+  li {
+    a {
+      color: $brand-text-icons;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 1px solid $brand-pager-border-color;
+
+      &:hover {
+        color: $brand-text-icons-a;
+      }
+    }
+  }
+  li.active {
+    span {
+      border: 1px solid $brand-accent;
+      background: $brand-accent;
+      color: $brand-text-icons-a;
+      font-weight: bold;
+    }
+  }
+}

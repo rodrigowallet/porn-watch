@@ -1,0 +1,49 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.content-info {
+  background: $brand-primary;
+
+  .logo-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .copyright,
+  .porn-watch {
+    margin: 4rem 0;
+    color: $brand-text-icons;
+
+    p {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .porn-watch {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+  .porn-watch {
+    display: block !important;
+
+    .btn {
+      float: right;
+    }
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { }

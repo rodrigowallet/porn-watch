@@ -27,7 +27,8 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage')
+    'primary_navigation'    => __('Menu Primário', 'sage'),
+    'footer_navigation'     => __('Menu Rodapé', 'sage')
   ]);
 
   // Enable post thumbnails
@@ -35,10 +36,12 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  add_image_size( 'Logo', 300, 80 );
+  add_image_size( 'Tagline', 400, 325 );
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
-  add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
+  add_theme_support('post-formats', ['video', 'image']);
 
   // Enable HTML5 markup support
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
@@ -84,8 +87,11 @@ function display_sidebar() {
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
+    is_author(),
+    is_category(),
     is_front_page(),
-    is_page_template('template-custom.php'),
+    is_search(),
+    is_tag()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

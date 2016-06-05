@@ -1,0 +1,14 @@
+.ads-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+
+  .ads {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: #eee;
+    border-radius: $border-radius-base;
+  }
+}
