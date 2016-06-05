@@ -1,0 +1,43 @@
+//#? BTN
+.btn {
+  border-radius: $border-radius-base;
+  border-color: transparent;
+  box-sizing: content-box;
+  outline: none !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  @extend .base-transition;
+}
+//#? Primary button
+.btn-primary {
+  background: $brand-accent;
+
+  a {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    a {
+      @extend .base-transition;
+        text-decoration: none;
+        color: $brand-text-icons-a;
+    }
+  }
+
+  &:active, {
+  &:hover,
+  &:focus {
+    background: $brand-primary;
+  }
+
+  }
+}
+
+//#? Load more
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 4.5rem;
+}

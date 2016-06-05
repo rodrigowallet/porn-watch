@@ -18,15 +18,24 @@
         <?php dynamic_sidebar('sidebar-footer'); ?>
       -->
     </div><!-- /.row -->
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
+    <div class="row row-eq-height">
+      <div class="col-xs-12 col-md-8">
         <div class="copyright">
           <p>
             © <?php echo get_bloginfo('name'); ?> 2016 - nenhum direito reservado.
           </p>
         </div><!-- /.copyright -->
       </div><!-- /.col -->
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-md-1">
+        <div class="whos-amung-us">
+          <?php
+            if(get_field('whos_amung_us', 'option')) {
+              the_field('whos_amung_us', 'option');
+            }
+          ?>
+        </div><!-- /.whos-amung-us -->
+      </div><!-- /.col -->
+      <div class="col-xs-12 col-md-3">
         <div class="porn-watch">
           <button class="btn btn-primary">
             <a title="X Porno Amadoras" alt="X Porno Amadoras" href="http://xpornoamadoras.com" target="_blank">

@@ -1,0 +1,209 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+//## MAIN POST
+.card {
+  height: 100%;
+  margin-bottom: 1rem;
+
+  &:hover .entry-title a {
+    color: $brand-primary;
+  }
+
+
+  .thumbnail {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      @extend .img-responsive;
+      @extend .base-transition;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+
+  //#? Entry Title
+  .entry-title {
+    line-height: 0.7;
+    min-height: 50px;
+
+    a {
+      color: $brand-title;
+      font-size: 2rem;
+      font-weight: 300;
+      @extend .base-transition;
+
+      &:active,
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //#? Entry Meta
+  .entry-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    color: $brand-meta;
+    font-weight: 600;
+  }
+
+  //#? Entry Summary
+  .entry-summary {
+    min-height: 60px;
+
+    p {
+      color: $brand-paragraph;
+      font-size: 1.4rem;
+      font-weight: 100;
+    }
+  }
+
+  //#? Footer
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    float: left;
+    padding: 2rem 0;
+  }
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+//#SINGLE POST
+.single-post {
+
+  //Fix sigle content padding
+  .main {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .entry-title {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+    color: $brand-title;
+  }
+  .entry-meta {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    @extend .clearfix;
+
+    span {
+      float: right;
+      color: $brand-meta;
+    }
+
+    .time {
+      margin-right: 2rem;
+    }
+
+    .author,
+    .time,
+    .views {
+      i {
+        color: $brand-primary-dark;
+      }
+    }
+
+    .author {
+      float: left;
+    }
+  }
+
+  .entry-content {
+    color: $brand-paragraph;
+    font-size: 1.8rem;
+    font-weight: 100;
+
+    strong,
+    em, b, i {
+      color: $brand-primary;
+    }
+  }
+
+  .entry-tags,
+  .entry-categories {
+    margin: 2rem 0;
+
+    h2 {
+      padding: 2rem 0;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $brand-primary;
+    }
+  }
+
+  .entry-categories {
+    a {
+      margin: 0 0.5rem 0.8rem 0;
+      @extend .btn;
+      @extend .btn-primary;
+    }
+  }
+
+	.entry-tags {
+
+		a {
+      padding: 0.2rem 1rem;
+      background: #eee;
+      border-radius: $border-radius-base;
+      margin: 0 0.8rem 0.8rem 0;
+      font-weight: bold;
+      display: inline-block;
+      float: left;
+
+			&:hover {
+        text-decoration: none;
+			}
+		}
+	}
+
+  .page-header {
+    margin-top: 0;
+  }
+}
+
+/* Extra small devices with landscpe orientation */
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+
+  //#? Divide grid in landscape
+  .card {
+    width: 50% !important;
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+
+
+}

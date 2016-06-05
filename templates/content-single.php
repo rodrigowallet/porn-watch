@@ -20,11 +20,11 @@
     </div><!-- /.entry-content -->
     <footer>
       <div class="entry-categories">
-        <h3>Categorias</h3>
+        <h2>Categorias</h2>
         <?php the_category(' '); ?>
       </div><!-- /.entry-categories -->
       <div class="entry-tags">
-        <?php the_tags( $before = '<h3>Tags </h3>', $sep = '', $after = '' ) ?>
+        <?php the_tags( $before = '<h2>Tags </h2>', $sep = '', $after = '' ) ?>
       </div><!-- /.entry-tags -->
     </footer>
   </article><!-- /.single-video -->

@@ -1,0 +1,209 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.navbar {
+
+  //#? Navbar nav
+  .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 15px;
+  }
+
+  //#? Menu item
+  .menu-item {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:last-child {
+      a {
+        border-bottom: none;
+      }
+
+    }
+
+    a {
+      border-bottom: 1px solid $brand-primary-dark;
+      padding: 2rem 0;
+      font-size: 1.6rem;
+      @extend .base-transition;
+
+    }
+  }
+  //#? Navbar header
+  .navbar-header {
+
+    //#? Categories toggle
+    .categories-toggle {
+      position: relative;
+      margin-top: 23px;
+      margin-bottom: 23px;
+      margin-left: 2rem;
+    }
+
+    //#? Navbar toggle
+    .navbar-toggle {
+      border-color: $brand-accent;
+      margin-right: 15px;
+      padding: 6px 12px;
+      background: $brand-accent;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      @extend .base-transition;
+
+      &:active,
+      &:hover,
+      &:focus {
+        border-color: $brand-primary-dark;
+        background: $brand-primary-dark;
+      }
+
+      //#? Icon bar
+      .icon-bar {
+        background: $brand-text-icons-a;
+      }
+    }
+  }
+}
+
+//#? Navbar categories
+.navbar-categories {
+  height: 100%;
+  position: fixed;
+  left: -60vw;
+  overflow-y: auto;
+  width: 60vw;
+  z-index: 999;
+  border-radius: 0;
+  padding: 0 2rem;
+  background: $brand-secondary;
+  @extend .base-transition;
+
+  h2 {
+    margin: 2.5rem 0;
+    color: $brand-primary;
+    display: inline-block;
+  }
+
+  .close-nav {
+    float: right;
+    margin: 2.5rem 0;
+    color: #D32F2F;
+    font-size: 2.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  //#? Navbar container
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      border-top: 1px solid #2c2c2c;
+      padding: 1rem 0;
+      display: block;
+      width: 100%;
+      @extend .base-transition;
+
+      a {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $brand-text-icons;
+        @extend .base-transition;
+
+        &:active,
+        &:hover,
+        &:focus {
+          color: $brand-text-icons-a;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+      span {
+        float: right;
+        box-sizing: content-box;
+        padding: 0 0.5rem;
+        background: $brand-primary;
+        border-radius: $border-radius-base;
+        display: inline-block;
+        color: $brand-text-icons-a;
+        font-weight: bold;
+      }
+    }
+
+    //#? Active menu item
+    .current-menu-item {
+      a {
+        color: $brand-text-icons-a;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.navbar-footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .menu-item {
+    margin: 1.5rem 0;
+    text-align: center;
+
+    a {
+      color: $brand-text-icons;
+      font-size: 1.3rem;
+      @extend .base-transition;
+
+    }
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+  .navbar {
+    //#? Menu item
+    .menu-item {
+      a {
+        border: none;
+        padding: 30px 15px !important;
+      }
+    }
+  }
+
+  .navbar-categories {
+    width: 30vw;
+    left: -30vw;
+  }
+
+  .navbar-footer {
+    .menu-item {
+      text-align: left;
+    }
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+  .navbar-categories {
+    width: 20vw;
+    left: -20vw;
+  }
+
+}

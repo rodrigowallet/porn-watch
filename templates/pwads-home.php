@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-xs-12 col-md-4 col-sm-6">
+      <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="pwad">
           <?php
             if (get_field('home_a', 'option')) {
@@ -14,7 +14,7 @@
         </div>
       </div><!-- /.pwad -->
 
-      <div class="hidden-xs col-md-4 col-sm-6">
+      <div class="hidden-xs col-sm-6 col-lg-4">
         <div class="pwad">
           <?php
             if (get_field('home_b', 'option')) {
@@ -26,7 +26,7 @@
         </div>
       </div><!-- /.pwad -->
 
-      <div class="hidden-xs hidden-sm col-md-4">
+      <div class="hidden-xs hidden-sm hidden-md">
         <div class="pwad">
           <?php
             if (get_field('home_c', 'option')) {

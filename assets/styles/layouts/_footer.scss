@@ -1,0 +1,78 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.content-info {
+  background: $brand-primary;
+  font-weight: bold;
+
+  .logo-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .copyright {
+    min-height: 34px;
+    margin: 2rem 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $brand-text-icons;
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .whos-amung-us,
+  .porn-watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whos-amung-us {
+    height: 100%;
+    p {
+      padding-top: 0.7rem;
+      margin: 0;
+    }
+  }
+
+  .porn-watch {
+    margin: 2rem 0;
+  }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+  .copyright {
+    min-height: 100% !important;
+    margin: 0 !important;
+    justify-content: flex-start !important;
+  }
+
+  .porn-watch {
+    justify-content: flex-end !important;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+
+
+}

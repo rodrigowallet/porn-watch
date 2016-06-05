@@ -1,0 +1,18 @@
+//##! HOMEPAGE
+.page-header {
+  border: none;
+  margin: 4rem 0;
+  padding: 3rem 0;
+  text-align: center;
+
+  h1, h2, h3,
+  h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $brand-primary;
+  }
+  p {
+    font-weight: 100;
+    color: $brand-paragraph;
+  }
+}
